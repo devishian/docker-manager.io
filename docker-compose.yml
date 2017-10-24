@@ -10,7 +10,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: devishian/manager.io:latest
+    image: mprokopov/manager.io:latest
     volumes:
       - ./data:/data
     environment:

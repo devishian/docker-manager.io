@@ -1,4 +1,4 @@
-# docker-manager.io
+# manager.io
 Dockerized http://manager.io accounting software
 
 Run with

@@ -7,7 +7,7 @@ up:
 	docker-compose up
 
 gpush:
-	docker push devishian/manager.io
+	docker push mprokopov/manager.io
 
 clean:
 	docker-compose down

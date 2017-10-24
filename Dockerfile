@@ -6,3 +6,4 @@ RUN curl https://mngr.s3.amazonaws.com/17.10.52/ManagerServer.tar.gz | tar xvz -
 CMD ["mono", "/usr/share/manager-server/ManagerServer.exe","-port","8080","-path","/data"]
 
 VOLUME /data
+EXPOSE 8080

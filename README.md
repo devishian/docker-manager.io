@@ -3,7 +3,7 @@ Dockerized http://manager.io accounting software
 
 Run with
 ```
-docker run -v $(pwd)/data:/data -p 8080:8080 mprokopov/manager.io
+docker run -v $(pwd)/data:/data -p 8080:8080 devishian/manager.io
 ```
 
 Open your browser http://dockerhost:8080
@@ -11,7 +11,7 @@ Open your browser http://dockerhost:8080
 Backup could be done by 
 ```
 docker run --rm --volumes-from managerio_data_1 \
-  -v $(pwd):/backup mprokopov/manager.io \
+  -v $(pwd):/backup devishian/manager.io \
   tar czvf /backup/Manager-backup.tar.gz /data
 ```
 Restore 

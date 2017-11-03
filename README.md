@@ -1,3 +1,3 @@
 # docker-manager.io
 
-Dockerized http://manager.io accounting software version 17.10.66
+Dockerized http://manager.io accounting software version $(curl -s http://www.manager.io/version.txt)

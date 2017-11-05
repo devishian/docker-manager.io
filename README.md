@@ -1,3 +1,3 @@
 # docker-manager.io
 
-Latest Dockerized http://manager.io accounting software version
+Latest Dockerized http://manager.io accounting software.

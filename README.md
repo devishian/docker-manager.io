@@ -2,6 +2,6 @@
 
 Dockerized http://manager.io accounting software.
 
-Version 19.1.40
+Version 19.2.3
 
 Data's Volume in Docker: "/data"

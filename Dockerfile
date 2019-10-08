@@ -1,7 +1,7 @@
 FROM mono:latest
 
 RUN mkdir /usr/share/manager-server
-RUN curl https://d2ap5zrlkavzl7.cloudfront.net/19.9.30/ManagerServer.tar.gz | tar xvz -C /usr/share/manager-server
+RUN curl https://d2ap5zrlkavzl7.cloudfront.net/19.10.12/ManagerServer.tar.gz | tar xvz -C /usr/share/manager-server
 
 CMD ["mono", "/usr/share/manager-server/ManagerServer.exe","-port","8080","-path","/data"]
 

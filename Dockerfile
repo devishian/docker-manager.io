@@ -1,7 +1,7 @@
 # Manager v19.12.13
 FROM mono:latest
 
-RUN apt install -y unzip
+RUN apt update && apt install -y unzip wget
 
 RUN mkdir /usr/share/manager-server
 RUN curl https://github.com/Manager-io/Manager.zip/releases/latest/download/Manager.zip | unzip /usr/share/manager-server/Manager.zip -d /usr/share/manager-server

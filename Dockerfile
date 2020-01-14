@@ -1,7 +1,8 @@
 FROM mono:latest
 
 RUN mkdir /usr/share/manager-server
-RUN curl https://d2ap5zrlkavzl7.cloudfront.net/19.11.21/ManagerServer.tar.gz | tar xvz -C /usr/share/manager-server
+RUN wget https://github.com/Manager-io/Manager.zip/releases/latest/download/Manager.zip -O /usr/share/manager-server/Manager.zip
+RUN unzip /usr/share/manager-server/Manager.zip -d /usr/share/manager-server
 
 CMD ["mono", "/usr/share/manager-server/ManagerServer.exe","-port","8080","-path","/data"]
 
